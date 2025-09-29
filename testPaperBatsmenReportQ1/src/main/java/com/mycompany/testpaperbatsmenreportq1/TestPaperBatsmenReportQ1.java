@@ -27,5 +27,40 @@ public class TestPaperBatsmenReportQ1 {
             runsScored[2][i] = sc.nextInt();
         }
 
+        System.out.println("------------------------------------------------------------");
+        System.out.println("RUNS SCORED REPORT");
+        System.out.println("------------------------------------------------------------");
         
+        // Loop runs scored at
+        for (int i = 0; i < stadiums.length; i++) {
+            System.out.println(batsmen[i] + " runs scored at " + stadiums[0] + ": " + runsScored[i][0]);
+            System.out.println(batsmen[i] + " runs scored at " + stadiums[1] + ": " + runsScored[i][1]);
+            System.out.println(batsmen[i] + " runs scored at " + stadiums[2] + ": " + runsScored[i][2]);
+            System.out.println("");
+        }
+        
+        System.out.println("");
+        System.out.println("------------------------------------------------------------");
+        System.out.println("TOTAL RUNS AT STADIUMS");
+        System.out.println("------------------------------------------------------------");
+        
+        int[] totals = new int[stadiums.length];
+        int maxTotal = 0;
+        String stadiumsMostRuns = "";
+
+        // CALCULATE TOTAL OF SCORES
+        for (int i = 0; i < stadiums.length; i++) {
+            totals[i] = runsScored[0][i] + runsScored[1][i] + runsScored[2][i];
+            System.out.printf("%-15s %-10d%n", stadiums[i], totals[i]);
+
+            if (totals[i] > maxTotal) {
+                maxTotal = totals[i];
+                stadiumsMostRuns = stadiums[i];
+            }
+        }
+
+        System.out.println("");
+        System.out.println("STSDIUMS WITH THE MOST RUNS: " + stadiumsMostRuns);
+        System.out.println("------------------------------------------------------------");
+    }
 }
