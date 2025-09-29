@@ -17,10 +17,10 @@ public class TestPaperBatsmenReportQ2 {
         System.out.print("Enter the total runs scored by" + batsman + " at " + stadium + ": ");
         int runsScored = scanner.nextInt();
 
-        // Criar objeto da subclasse
+        // Create subclass object
         BatsmanRunsScoredReport report = new BatsmanRunsScoredReport(batsman, stadium, runsScored);
 
-        // Imprimir relatório
+        // Print report
         report.printAccidentReport();
     }
 }
