@@ -5,23 +5,23 @@ public abstract class CricketRunsScored implements ICricket{
     protected String stadium;
     protected int runsScored;
     
-    // Construtor
+    // Constructor
     public CricketRunsScored(String batsman, String stadium, int runsScored) {
         this.batsman = batsman;
         this.stadium = stadium;
         this.runsScored = runsScored;
     }
 
-    // Metod GET
-    public String getAccidentVehicleType() {
+    // Method GET
+    public String getBatsmanName() {
         return batsman;
     }
 
-    public String getCity() {
+    public String getStadiumName() {
         return stadium;
     }
 
-    public int getAccidentTotal() {
+    public int getRunsScoredTotal() {
         return runsScored;
     }
 }
