@@ -13,15 +13,15 @@ public abstract class CricketRunsScored implements ICricket{
     }
 
     // Method GET
-    public String getBatsmanName() {
+    public String getBatsman() {
         return batsman;
     }
 
-    public String getStadiumName() {
+    public String getStadium() {
         return stadium;
     }
 
-    public int getRunsScoredTotal() {
+    public int getRunsScored() {
         return runsScored;
     }
 }
