@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.testpaperbatsmenreportq1;
+import java.util.Scanner;
 
-/**
- *
- * @author HP
- */
 public class TestPaperBatsmenReportQ1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+        Scanner sc = new Scanner(System.in);
+
+        String[] batsmen = {"Jacques Kallis", "Hashim Amla", "AB De Villiers"};
+        String[] stadiums = {"Kingsmead", "St Georges", "Wanderers"};
+
+        // dimentional array
+        int[][] runsScored = new int[3][3];
+        
+        
 }
